@@ -1,0 +1,382 @@
+/* =====================================================================
+   RYUU PICKUP — design system
+   Warm paper background, white surfaces, ink type, one quiet accent.
+   Serif (Sitka Text) for display, Segoe UI for interface text.
+   ===================================================================== */
+
+.root {
+    -bg: #F6F4F0;
+    -surface: #FFFFFF;
+    -surface-2: #F3F0EB;
+    -surface-3: #ECE8E1;
+    -border: #E7E2DA;
+    -border-strong: #D5CEC3;
+    -ink: #1A1814;
+    -text-2: #5E5850;
+    -text-3: #8E877C;
+    -accent: #C8461A;
+    -accent-soft: #F8E9E2;
+    -green: #2F7D59;
+    -green-soft: #E5F1EA;
+    -amber: #A8680C;
+    -amber-soft: #F8EEDC;
+    -blue: #3A6EA5;
+    -fx-font-family: "Segoe UI";
+    -fx-font-size: 13px;
+    -fx-background-color: -bg;
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+}
+.label { -fx-text-fill: -ink; }
+.text-field { -fx-highlight-fill: #E9DDD2; -fx-highlight-text-fill: -ink; }
+
+/* ---------------------------------------------------------------- type */
+.display-xl, .display-l, .display-m, .display-s { -fx-font-family: "Sitka Text"; -fx-text-fill: -ink; }
+.display-xl { -fx-font-size: 40px; }
+.display-l { -fx-font-size: 30px; }
+.display-m { -fx-font-size: 22px; }
+.display-s { -fx-font-size: 18px; }
+.title { -fx-font-family: "Segoe UI Semibold"; -fx-font-size: 14px; }
+.title-s { -fx-font-family: "Segoe UI Semibold"; -fx-font-size: 13px; }
+.body { -fx-font-size: 13.5px; -fx-text-fill: -text-2; -fx-line-spacing: 2; }
+.meta { -fx-font-size: 12.5px; -fx-text-fill: -text-3; }
+.meta-ink { -fx-font-size: 12.5px; -fx-text-fill: -text-2; }
+.caption { -fx-font-size: 11.5px; -fx-text-fill: -text-3; -fx-font-family: "Segoe UI Semibold"; }
+.positive { -fx-text-fill: -green; }
+.warning { -fx-text-fill: -amber; }
+.accent-text { -fx-text-fill: -accent; }
+.mono { -fx-font-family: "Consolas"; -fx-font-size: 12px; -fx-text-fill: -text-3; }
+.num-l { -fx-font-family: "Sitka Text"; -fx-font-size: 28px; }
+
+/* ---------------------------------------------------------------- icons */
+.icon { -fx-background-color: -text-3; }
+.icon-ink { -fx-background-color: -ink; }
+.icon-muted { -fx-background-color: -text-3; }
+.icon-white { -fx-background-color: white; }
+.icon-accent { -fx-background-color: -accent; }
+.icon-green { -fx-background-color: -green; }
+.icon-amber { -fx-background-color: -amber; }
+.icon-star { -fx-background-color: #C58B1B; }
+
+/* ---------------------------------------------------------------- sidebar */
+.sidebar {
+    -fx-background-color: -surface;
+    -fx-border-color: transparent -border transparent transparent;
+    -fx-padding: 24 14 18 14;
+}
+.brand-mark {
+    -fx-background-color: -ink;
+    -fx-background-radius: 8;
+    -fx-min-width: 30; -fx-min-height: 30; -fx-max-width: 30; -fx-max-height: 30;
+}
+.brand-name { -fx-font-family: "Sitka Text"; -fx-font-size: 21px; }
+.brand-sub { -fx-font-size: 11.5px; -fx-text-fill: -text-3; }
+.side-heading { -fx-font-size: 11.5px; -fx-text-fill: -text-3; -fx-padding: 0 0 0 12; }
+.nav-btn {
+    -fx-background-color: transparent;
+    -fx-text-fill: -text-2;
+    -fx-font-size: 13.5px;
+    -fx-padding: 8 12;
+    -fx-background-radius: 7;
+    -fx-cursor: hand;
+    -fx-graphic-text-gap: 12;
+}
+.nav-btn .nav-icon { -fx-background-color: -text-3; }
+.nav-btn:hover { -fx-background-color: -surface-2; -fx-text-fill: -ink; }
+.nav-btn:active { -fx-background-color: -surface-2; -fx-text-fill: -ink; -fx-font-family: "Segoe UI Semibold"; }
+.nav-btn:active .nav-icon { -fx-background-color: -ink; }
+.nav-badge {
+    -fx-background-color: -ink; -fx-background-radius: 9;
+    -fx-text-fill: white; -fx-font-size: 11px; -fx-font-family: "Segoe UI Semibold";
+    -fx-padding: 0 6;
+}
+.live-dot { -fx-fill: -accent; }
+.side-link {
+    -fx-background-color: transparent; -fx-text-fill: -text-2; -fx-padding: 6 12;
+    -fx-cursor: hand; -fx-font-size: 13px; -fx-graphic-text-gap: 10;
+}
+.side-link:hover { -fx-text-fill: -ink; }
+.account {
+    -fx-padding: 10 8 0 8;
+    -fx-border-color: -border transparent transparent transparent;
+}
+.avatar {
+    -fx-background-color: -surface-3; -fx-background-radius: 16;
+    -fx-min-width: 32; -fx-min-height: 32; -fx-max-width: 32; -fx-max-height: 32;
+}
+
+/* ---------------------------------------------------------------- top bar */
+.topbar {
+    -fx-padding: 14 32;
+    -fx-background-color: -bg;
+    -fx-border-color: transparent transparent -border transparent;
+}
+.context {
+    -fx-background-color: -surface; -fx-background-radius: 8; -fx-border-radius: 8;
+    -fx-border-color: -border; -fx-padding: 7 12;
+}
+.search {
+    -fx-background-color: -surface; -fx-background-radius: 8; -fx-border-radius: 8;
+    -fx-border-color: -border; -fx-padding: 0 12; -fx-pref-height: 36;
+}
+.search:focus-within { -fx-border-color: -border-strong; }
+.search .text-field {
+    -fx-background-color: transparent; -fx-text-fill: -ink; -fx-prompt-text-fill: -text-3;
+    -fx-padding: 6 0; -fx-font-size: 13px;
+}
+.icon-btn {
+    -fx-background-color: -surface; -fx-background-radius: 8; -fx-border-radius: 8; -fx-border-color: -border;
+    -fx-min-width: 36; -fx-min-height: 36; -fx-max-width: 36; -fx-max-height: 36; -fx-cursor: hand;
+}
+.icon-btn:hover { -fx-background-color: -surface-2; }
+.bag-badge {
+    -fx-background-color: -ink; -fx-text-fill: white; -fx-font-size: 10.5px;
+    -fx-font-family: "Segoe UI Semibold"; -fx-background-radius: 8; -fx-padding: 0 5;
+}
+
+/* ---------------------------------------------------------------- surfaces */
+.page { -fx-padding: 28 32 40 32; }
+.card {
+    -fx-background-color: -surface; -fx-background-radius: 10; -fx-border-radius: 10;
+    -fx-border-color: -border; -fx-padding: 20;
+}
+.card-quiet {
+    -fx-background-color: -surface-2; -fx-background-radius: 10; -fx-padding: 16;
+}
+.demo-panel {
+    -fx-background-color: transparent; -fx-background-radius: 10; -fx-border-radius: 10;
+    -fx-border-color: -border-strong; -fx-border-style: segments(4, 4); -fx-padding: 14 16;
+}
+.hairline { -fx-background-color: -border; -fx-min-height: 1; -fx-max-height: 1; -fx-pref-height: 1; }
+.vline { -fx-background-color: -border; -fx-min-width: 1; -fx-max-width: 1; -fx-pref-width: 1; }
+
+/* ---------------------------------------------------------------- buttons */
+.btn-primary {
+    -fx-background-color: -ink; -fx-text-fill: white; -fx-font-family: "Segoe UI Semibold";
+    -fx-font-size: 13px; -fx-padding: 9 16; -fx-background-radius: 8; -fx-cursor: hand; -fx-graphic-text-gap: 8;
+}
+.btn-primary:hover { -fx-background-color: #34302A; }
+.btn-primary:pressed { -fx-background-color: #000000; }
+.btn-primary:disabled { -fx-opacity: 0.35; }
+.btn-lg { -fx-font-size: 14px; -fx-padding: 12 18; }
+.btn-secondary {
+    -fx-background-color: -surface; -fx-border-color: -border-strong; -fx-border-radius: 8; -fx-background-radius: 8;
+    -fx-text-fill: -ink; -fx-font-family: "Segoe UI Semibold"; -fx-font-size: 13px; -fx-padding: 8 14;
+    -fx-cursor: hand; -fx-graphic-text-gap: 8;
+}
+.btn-secondary:hover { -fx-background-color: -surface-2; }
+.btn-secondary:disabled { -fx-opacity: 0.45; }
+.btn-text {
+    -fx-background-color: transparent; -fx-text-fill: -text-2; -fx-font-family: "Segoe UI Semibold";
+    -fx-padding: 8 4; -fx-cursor: hand;
+}
+.btn-text:hover { -fx-text-fill: -ink; }
+.btn-add {
+    -fx-background-color: -surface; -fx-border-color: -border-strong; -fx-border-radius: 8; -fx-background-radius: 8;
+    -fx-text-fill: -ink; -fx-font-family: "Segoe UI Semibold"; -fx-padding: 6 16; -fx-cursor: hand;
+}
+.btn-add:hover { -fx-background-color: -surface-2; }
+.stepper {
+    -fx-background-color: -surface; -fx-border-color: -border-strong; -fx-border-radius: 8; -fx-background-radius: 8;
+    -fx-padding: 2;
+}
+.step-btn {
+    -fx-background-color: transparent; -fx-background-radius: 6; -fx-padding: 0; -fx-cursor: hand;
+    -fx-min-width: 26; -fx-min-height: 26; -fx-max-width: 26; -fx-max-height: 26;
+}
+.step-btn:hover { -fx-background-color: -surface-2; }
+.step-qty { -fx-font-family: "Segoe UI Semibold"; -fx-min-width: 22; -fx-alignment: center; }
+
+/* ---------------------------------------------------------------- filters & segmented */
+.chip-filter {
+    -fx-background-color: transparent; -fx-border-color: -border; -fx-background-radius: 18; -fx-border-radius: 18;
+    -fx-text-fill: -text-2; -fx-padding: 5 14; -fx-cursor: hand;
+}
+.chip-filter:hover { -fx-border-color: -border-strong; -fx-text-fill: -ink; }
+.chip-filter:selected { -fx-background-color: -ink; -fx-border-color: -ink; -fx-text-fill: white; }
+.segmented {
+    -fx-background-color: -surface-3; -fx-background-radius: 8; -fx-padding: 3;
+}
+.seg-btn {
+    -fx-background-color: transparent; -fx-text-fill: -text-2; -fx-background-radius: 6;
+    -fx-padding: 5 12; -fx-cursor: hand; -fx-font-size: 12.5px;
+}
+.seg-btn:hover { -fx-text-fill: -ink; }
+.seg-btn:selected {
+    -fx-background-color: -surface; -fx-text-fill: -ink; -fx-font-family: "Segoe UI Semibold";
+    -fx-effect: dropshadow(gaussian, rgba(26,24,20,0.10), 3, 0, 0, 1);
+}
+
+/* ---------------------------------------------------------------- status pills */
+.status {
+    -fx-font-family: "Segoe UI Semibold"; -fx-font-size: 11.5px; -fx-background-radius: 5; -fx-padding: 2 8;
+}
+.status-muted { -fx-text-fill: -text-2; -fx-background-color: -surface-3; }
+.status-accent { -fx-text-fill: -accent; -fx-background-color: -accent-soft; }
+.status-green { -fx-text-fill: -green; -fx-background-color: -green-soft; }
+.status-amber { -fx-text-fill: -amber; -fx-background-color: -amber-soft; }
+
+/* ---------------------------------------------------------------- restaurant cards */
+.r-card { -fx-background-color: transparent; -fx-cursor: hand; }
+.r-photo { -fx-background-radius: 10; }
+.r-card:active .r-name { -fx-underline: true; }
+.r-name { -fx-font-family: "Segoe UI Semibold"; -fx-font-size: 15px; }
+
+/* ---------------------------------------------------------------- commute strip */
+.commute {
+    -fx-background-color: -surface; -fx-background-radius: 10; -fx-border-radius: 10;
+    -fx-border-color: -border; -fx-padding: 16 20;
+}
+
+/* ---------------------------------------------------------------- route */
+.map-wrap { -fx-background-radius: 10; -fx-border-radius: 10; -fx-border-color: -border; }
+.stop-row { -fx-padding: 10 12; -fx-background-radius: 8; -fx-cursor: hand; }
+.stop-row:hover { -fx-background-color: -surface-2; }
+.stop-row:active { -fx-background-color: -surface-2; }
+.stop-index {
+    -fx-background-color: -surface-3; -fx-background-radius: 11; -fx-alignment: center;
+    -fx-min-width: 22; -fx-min-height: 22; -fx-max-width: 22; -fx-max-height: 22;
+    -fx-font-family: "Segoe UI Semibold"; -fx-font-size: 11px; -fx-text-fill: -text-2;
+}
+.stop-row:active .stop-index { -fx-background-color: -ink; -fx-text-fill: white; }
+
+/* ---------------------------------------------------------------- menu */
+.cover { -fx-background-radius: 10; }
+.menu-row { -fx-padding: 16 0; -fx-border-color: transparent transparent -border transparent; }
+.veg {
+    -fx-min-width: 11; -fx-min-height: 11; -fx-max-width: 11; -fx-max-height: 11;
+    -fx-border-width: 1.2; -fx-border-radius: 2; -fx-background-radius: 2; -fx-background-insets: 2.6;
+}
+.veg-yes { -fx-border-color: #2F7D59; -fx-background-color: #2F7D59; }
+.veg-no { -fx-border-color: #B0412E; -fx-background-color: #B0412E; }
+.price { -fx-font-family: "Segoe UI Semibold"; -fx-font-size: 13.5px; }
+
+/* ---------------------------------------------------------------- bag */
+.bag {
+    -fx-background-color: -surface; -fx-background-radius: 10; -fx-border-radius: 10; -fx-border-color: -border;
+}
+.bag-section { -fx-padding: 18 20; -fx-border-color: transparent transparent -border transparent; }
+.bag-footer { -fx-padding: 16 20 20 20; }
+.total { -fx-font-family: "Segoe UI Semibold"; -fx-font-size: 15px; }
+.strike { -fx-fill: -text-3; -fx-strikethrough: true; -fx-font-size: 12.5px; }
+
+.switch-track { -fx-background-color: -surface-3; -fx-background-radius: 12; }
+.switch-track:active { -fx-background-color: -ink; }
+.switch-knob { -fx-fill: white; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.25), 2, 0, 0, 1); }
+
+/* ---------------------------------------------------------------- sheet (modal) */
+.scrim { -fx-background-color: rgba(26, 24, 20, 0.38); }
+.sheet {
+    -fx-background-color: -surface; -fx-background-radius: 14; -fx-border-radius: 14; -fx-border-color: -border;
+    -fx-padding: 28; -fx-effect: dropshadow(gaussian, rgba(26,24,20,0.18), 40, 0, 0, 12);
+}
+.success-mark {
+    -fx-background-color: -green-soft; -fx-background-radius: 22;
+    -fx-min-width: 44; -fx-min-height: 44; -fx-max-width: 44; -fx-max-height: 44;
+}
+
+/* ---------------------------------------------------------------- order tracking */
+.seg-track { -fx-background-color: -surface-3; -fx-background-radius: 3; -fx-min-height: 5; -fx-max-height: 5; }
+.seg-track:done { -fx-background-color: -ink; }
+.seg-track:active { -fx-background-color: -accent; }
+.seg-label { -fx-font-size: 12px; -fx-text-fill: -text-3; }
+.seg-label:done { -fx-text-fill: -text-2; }
+.seg-label:active { -fx-text-fill: -ink; -fx-font-family: "Segoe UI Semibold"; }
+.note {
+    -fx-background-color: -amber-soft; -fx-background-radius: 8; -fx-padding: 10 12;
+}
+.note .label { -fx-text-fill: #7A4C08; }
+.qr { -fx-background-color: white; -fx-border-color: -border; -fx-border-radius: 8; -fx-background-radius: 8; -fx-padding: 10; }
+.pass-code { -fx-font-family: "Consolas"; -fx-font-size: 18px; -fx-text-fill: -ink; }
+
+/* ---------------------------------------------------------------- kitchen */
+.lane { -fx-background-color: -surface-2; -fx-background-radius: 10; -fx-padding: 14; }
+.lane-count {
+    -fx-background-color: -surface; -fx-background-radius: 9; -fx-padding: 0 7;
+    -fx-font-family: "Segoe UI Semibold"; -fx-text-fill: -text-2; -fx-font-size: 11.5px;
+}
+.ticket {
+    -fx-background-color: -surface; -fx-background-radius: 8; -fx-border-radius: 8; -fx-border-color: -border;
+    -fx-padding: 12 14;
+}
+.ticket-mine { -fx-border-color: -accent; }
+.bar { -fx-pref-height: 4; }
+.bar > .track { -fx-background-color: -surface-3; -fx-background-radius: 2; -fx-background-insets: 0; }
+.bar > .bar { -fx-background-color: -accent; -fx-background-radius: 2; -fx-background-insets: 0; -fx-padding: 2; }
+.bar-ink > .bar { -fx-background-color: -ink; }
+
+/* ---------------------------------------------------------------- insights */
+.kpi { -fx-padding: 0 28 0 0; }
+.chart { -fx-padding: 4 0 0 0; }
+.chart-plot-background { -fx-background-color: transparent; }
+.chart-vertical-grid-lines { -fx-stroke: transparent; }
+.chart-horizontal-grid-lines { -fx-stroke: #EEEAE4; }
+.chart-alternative-row-fill, .chart-alternative-column-fill { -fx-fill: transparent; -fx-stroke: transparent; }
+.chart-vertical-zero-line, .chart-horizontal-zero-line { -fx-stroke: transparent; }
+.axis { -fx-tick-label-fill: -text-3; -fx-tick-label-font-size: 11px; }
+.axis-tick-mark, .axis-minor-tick-mark { -fx-stroke: transparent; }
+.axis:bottom { -fx-border-color: -border transparent transparent transparent; }
+.axis:left { -fx-border-color: transparent; }
+.chart-series-area-line { -fx-stroke: #1A1814; -fx-stroke-width: 1.8px; }
+.chart-series-area-fill { -fx-fill: rgba(26,24,20,0.05); }
+.chart-area-symbol { -fx-background-color: #1A1814, white; -fx-background-insets: 0, 1.6; -fx-background-radius: 4, 3; -fx-padding: 3.5; }
+.chart-bar { -fx-background-color: #1A1814; -fx-background-radius: 3 3 0 0; }
+.data0.chart-bar { -fx-background-color: #C8461A; }
+
+/* ---------------------------------------------------------------- toast */
+.toast {
+    -fx-background-color: -ink; -fx-background-radius: 8; -fx-padding: 11 16;
+    -fx-effect: dropshadow(gaussian, rgba(26,24,20,0.25), 20, 0, 0, 6);
+}
+.toast-text { -fx-text-fill: white; -fx-font-size: 12.5px; }
+
+/* ---------------------------------------------------------------- intro */
+.intro-scrim { -fx-background-color: #F6F4F0; }
+.intro-card { -fx-padding: 0; }
+.intro-dot {
+    -fx-min-width: 6; -fx-min-height: 6; -fx-max-width: 6; -fx-max-height: 6;
+    -fx-background-radius: 3; -fx-background-color: -border-strong;
+}
+.intro-dot:active { -fx-background-color: -ink; }
+
+/* ---------------------------------------------------------------- scroll */
+.scroll-pane, .scroll-pane > .viewport { -fx-background-color: transparent; -fx-background: transparent; }
+.scroll-pane { -fx-padding: 0; -fx-background-insets: 0; }
+.scroll-pane .corner { -fx-background-color: transparent; }
+.scroll-bar { -fx-background-color: transparent; -fx-pref-width: 10; }
+.scroll-bar:horizontal { -fx-pref-height: 10; }
+.scroll-bar .thumb { -fx-background-color: #D9D3C9; -fx-background-radius: 8; -fx-background-insets: 2; }
+.scroll-bar .thumb:hover { -fx-background-color: #C6BEB2; }
+.scroll-bar .track, .scroll-bar .track-background { -fx-background-color: transparent; }
+.scroll-bar .increment-button, .scroll-bar .decrement-button { -fx-padding: 0; -fx-background-color: transparent; }
+.scroll-bar .increment-arrow, .scroll-bar .decrement-arrow { -fx-padding: 0; -fx-shape: ""; }
+.separator .line { -fx-border-color: -border; -fx-border-width: 1 0 0 0; }
+.rate-btn { -fx-background-color: transparent; -fx-cursor: hand; -fx-padding: 2; }
+.rate-btn .rate-star { -fx-background-color: -border-strong; }
+.rate-btn:hover .rate-star, .rate-btn:active .rate-star { -fx-background-color: #C58B1B; }
+
+/* ---------------------------------------------------------------- route picker */
+.context { -fx-padding: 4 12 4 12; }
+.place-box {
+    -fx-background-color: transparent; -fx-background-radius: 6; -fx-padding: 0;
+    -fx-font-family: "Segoe UI Semibold"; -fx-cursor: hand;
+}
+.place-box:hover, .place-box:showing { -fx-background-color: -surface-2; }
+.place-box > .list-cell { -fx-text-fill: -ink; -fx-padding: 4 4 4 8; -fx-background-color: transparent; }
+.place-box > .arrow-button { -fx-background-color: transparent; -fx-padding: 0 8 0 2; }
+.place-box > .arrow-button > .arrow { -fx-background-color: -text-3; -fx-padding: 2.5 4 2.5 4; }
+.combo-box-popup > .list-view {
+    -fx-background-color: -surface; -fx-border-color: -border; -fx-border-radius: 8; -fx-background-radius: 8;
+    -fx-padding: 4; -fx-effect: dropshadow(gaussian, rgba(26,24,20,0.14), 20, 0, 0, 6);
+}
+.combo-box-popup > .list-view > .virtual-flow > .clipped-container > .sheet > .list-cell {
+    -fx-background-color: transparent; -fx-padding: 6 10; -fx-background-radius: 6;
+}
+.combo-box-popup > .list-view > .virtual-flow > .clipped-container > .sheet > .list-cell:hover,
+.combo-box-popup > .list-view > .virtual-flow > .clipped-container > .sheet > .list-cell:selected {
+    -fx-background-color: -surface-2;
+}
+.swap-btn {
+    -fx-background-color: transparent; -fx-background-radius: 6; -fx-padding: 4; -fx-cursor: hand;
+}
+.swap-btn:hover { -fx-background-color: -surface-2; }

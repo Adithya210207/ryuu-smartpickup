@@ -1,0 +1,14 @@
+# build outputs (recreated by run.ps1 / start.bat / jpackage)
+out/
+build/
+dist/
+*.class
+
+# JavaFX jars are downloaded by run.ps1 on first run
+lib/
+
+# editor / OS noise
+.idea/
+.vscode/
+Thumbs.db
+desktop.ini
