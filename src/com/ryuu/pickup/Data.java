@@ -3,9 +3,9 @@ package com.ryuu.pickup;
 import java.util.List;
 import java.util.Set;
 
+/**
  * Real Coimbatore restaurants. Names, addresses, coordinates, ratings and dishes come from their
  * public listings (November 2026). Prices are illustrative, not the restaurants' own; prep times are estimates.
- * come from their public Zomato listings (November 2026). Prep times are estimates.
  * Photos are illustrative, not the restaurants' own. Art kinds: 0 = bowl, 1 = cup, 2 = plate.
  */
 final class Data {
